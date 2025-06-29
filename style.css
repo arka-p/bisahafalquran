@@ -1,0 +1,90 @@
+body {
+  background-color: rgb(255, 255, 235);
+  margin: 0;
+  padding: 0;
+  font-family: "Onest", sans-serif;
+}
+
+.header {
+  background-color: rgb(29, 29, 29);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20%;
+  padding-right: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 30px;
+}
+
+.daftar {
+  padding: 5px 12px;
+  background-color: rgb(255, 217, 0);
+  border-radius: 8px;
+}
+
+a {
+  color: rgb(36, 36, 36);
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 64px;
+  margin: 0;
+  letter-spacing: -3px;
+}
+
+h2 {
+  font-size: 51px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 40px;
+  margin: 0;
+}
+
+h4 {
+  font-size: 32px;
+  margin: 0;
+}
+
+h5 {
+  font-size: 20px;
+  margin: 0;
+}
+
+p {
+  font-size: 16px;
+}
+
+.content01 {
+  padding: 4% 20%;
+}
+
+/* Responsive */
+/* Responsive */
+/* Responsive */
+
+@media (max-width: 1024px) {
+  .header {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .content01 {
+    padding: 4% 10%;
+  }
+}
+
+@media (max-width: 430px) {
+  .header {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .content01 {
+    padding: 4% 5%;
+  }
+}
