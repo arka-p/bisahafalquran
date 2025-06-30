@@ -13,17 +13,29 @@ body {
   padding-right: 20%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .logo {
-  height: 30px;
+  flex: 1;
 }
 
-.daftar {
-  padding: 5px 12px;
+.logo img {
+  height: 50px;
+}
+
+.btn-link {
+  display: inline-block;
+  padding: 10px 20px;
   background-color: rgb(255, 217, 0);
-  border-radius: 8px;
+  color: rgb(36, 36, 36);
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-link:hover {
+  background-color: rgb(236, 200, 0);
 }
 
 a {
@@ -72,7 +84,8 @@ p {
 .content02 {
   background-color: white;
   display: grid;
-  grid-template-columns: 1fr 1fr; /* default: 2 kolom */
+  grid-template-columns: 1fr 1fr;
+  /* default: 2 kolom */
 }
 
 .cols01 {
@@ -104,9 +117,11 @@ p {
     padding-left: 10%;
     padding-right: 10%;
   }
+
   .content01 {
     padding: 4% 10%;
   }
+
   .content02 {
     grid-template-columns: 1fr;
   }
@@ -117,6 +132,7 @@ p {
     padding-left: 5%;
     padding-right: 5%;
   }
+
   .content01 {
     padding: 4% 5%;
   }
