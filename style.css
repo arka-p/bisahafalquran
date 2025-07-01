@@ -52,35 +52,35 @@ a {
 }
 
 h1 {
-  font-size: 64px;
+  font-size: 48px;
   margin: 0;
   letter-spacing: -3px;
   color: rgb(0, 0, 0);
 }
 
 h2 {
-  font-size: 51px;
+  font-size: 38px;
   margin: 0;
 }
 
 h3 {
-  font-size: 40px;
+  font-size: 30px;
   margin: 0;
 }
 
 h4 {
-  font-size: 32px;
+  font-size: 24px;
   margin: 0;
   color: rgb(0, 0, 0);
 }
 
 h5 {
-  font-size: 20px;
+  font-size: 19px;
   margin: 0;
 }
 
 p {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 /* Content */
@@ -99,7 +99,7 @@ p {
 }
 
 .cols {
-  padding: 5em 1em;
+  padding: 1em 1em;
 }
 
 .cols.a1 {
@@ -147,30 +147,57 @@ p {
   text-align: center;
 }
 
-/* Responsive */
+/*Accordion*/
 
-@media (max-width: 1024px) {
-  .header {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-
-  .content01 {
-    padding: 4% 10%;
-  }
-
-  .content02 {
-    grid-template-columns: 1fr;
-  }
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
 }
 
-@media (max-width: 430px) {
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
   .header {
     padding-left: 4%;
     padding-right: 4%;
   }
-
-  .content01 {
-    padding: 4% 4%;
+  .content {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+  .cols.a1,
+  .cols.a4,
+  .cols.a7,
+  .cols.a8,
+  .cols.a9,
+  .cols.a10 {
+    grid-column: 1 / 2; /* hanya 1 kolom di mode mobile */
+  }
+  .cols.a9 p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .cols.a2,
+  .cols.a5 {
+    display: none;
   }
 }
