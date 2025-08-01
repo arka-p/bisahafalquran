@@ -22,7 +22,7 @@ const Section01 = ({ onMulaiClick }) => {
         <div>
           <video
             className="aspect-video h-auto rounded-xl xl:rounded-3xl w-full"
-            src="https://bisahafalquran.com/wp-content/uploads/2024/12/output.webm"
+            src="/output.webm"
             autoPlay
             muted
             loop
